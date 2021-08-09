@@ -1,0 +1,78 @@
+:root {
+  /* ---- Typography ---- */
+  --font-main: "Spartan", sans-serif;
+  --fontweight-s: 400;
+  --fontweight-m: 500;
+  --fontweight-l: 700;
+  --lineheight: 1.7;
+
+  /* ---- Colors ---- */
+  --accent-dark: hsl(300, 43%, 22%);
+  --accent-light: hsl(333, 80%, 67%);
+  --secondary--dark: hsl(303, 10%, 53%);
+  --secondary--light: hsl(290, 38%, 94%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-main);
+  font-weight: 400;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./src/assets/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+body::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: calc(100% - 503px);
+  bottom: 0;
+  background-image: url("./src/assets/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media (min-width: 1440px) {
+  body {
+    min-width: 1440px;
+  }
+
+  body::before {
+    background-image: url("./src/assets/bg-pattern-top-desktop.svg");
+  }
+
+  body::after {
+    background-image: url("./src/assets/bg-pattern-bottom-desktop.svg");
+  }
+
+  .flex-container {
+    padding: 6em 0 2em;
+    display: flex;
+    justify-content: space-between;
+  }
+}
