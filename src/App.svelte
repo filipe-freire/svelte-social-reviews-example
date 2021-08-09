@@ -2,6 +2,10 @@
   import ReviewCard from "./lib/ReviewCard.svelte";
   import StarReview from "./lib/StarReview.svelte";
 
+  import coltonImg from "./../src/assets/image-colton.jpg";
+  import ireneImg from "./../src/assets/image-irene.jpg";
+  import anneImg from "./../src/assets/image-anne.jpg";
+
   interface UserReview {
     id: number;
     userName: string;
@@ -18,7 +22,7 @@
     {
       id: 1,
       userName: "Colton Smith",
-      userImg: "./../src/assets/image-colton.jpg",
+      userImg: coltonImg,
       review: `We needed the same printed design 
       as the one we had ordered a week prior. 
       Not only did they find the original order, 
@@ -27,7 +31,7 @@
     {
       id: 2,
       userName: "Irene Roberts",
-      userImg: "./../src/assets/image-irene.jpg",
+      userImg: ireneImg,
       review: `Customer service is always excellent 
       and very quick turn around. Completely delighted 
       with the simplicity of the purchase and the speed of delivery.`,
@@ -35,7 +39,7 @@
     {
       id: 3,
       userName: "Anne Wallace",
-      userImg: "./../src/assets/image-anne.jpg",
+      userImg: anneImg,
       review: `Put an order with this company 
       and can only praise them for the very 
       high standard. Will definitely use them again 

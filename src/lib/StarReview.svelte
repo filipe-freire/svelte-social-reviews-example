@@ -3,6 +3,8 @@
   export let rating: number;
   export let id: number;
 
+  import star from "./../assets/icon-star.svg";
+
   function checkAlignment(id: number) {
     if (id === 2) return `center`;
     if (id === 3) return `end`;
@@ -12,7 +14,7 @@
 <div class="card-rating {id !== 1 && 'gap'} {checkAlignment(id)} ">
   <div class="star-rating">
     {#each Array(rating) as _}
-      <img src="./src/assets/icon-star.svg" alt="" />
+      <img src={star} alt="" />
     {/each}
   </div>
   <p class="card--text">Rated {rating} Stars in {company}</p>
