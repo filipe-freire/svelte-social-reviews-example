@@ -138,6 +138,8 @@
   .attribution {
     font-weight: 300;
     padding: 1em 1em 2em;
+    text-align: center;
+    line-height: 2ch;
   }
 
   @media (min-width: 1440px) {
@@ -171,7 +173,6 @@
 
     .attribution {
       font-size: 11px;
-      text-align: center;
     }
     .attribution a {
       color: hsl(228, 45%, 44%);
