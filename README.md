@@ -10,7 +10,7 @@ This repository holds my solution for the [Frontend Mentors Social Proof Section
 
 ### Live Demo
 
-[Click here to see the live page](https://svelte-social-reviews-example.surge.sh/)
+[Click here to see the live page](https://svelte-social-reviews-example.netlify.app/)
 
 ### Key Takeaways
 
